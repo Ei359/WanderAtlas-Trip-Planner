@@ -1,0 +1,265 @@
+:root {
+  font-family: "Instrument Sans", Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  color: #24382e;
+  background: #f7f5ee;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  isolation: isolate;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background:
+    linear-gradient(rgba(247, 245, 238, 0.86), rgba(247, 245, 238, 0.78)),
+    url("https://images.pexels.com/photos/27772455/pexels-photo-27772455.jpeg?auto=compress&cs=tinysrgb&w=1280")
+      center / cover no-repeat;
+}
+
+h1, h2, h3, p { margin: 0; }
+p { color: #516359; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid #b66941; outline-offset: 3px; }
+section, #planner { scroll-margin-top: 20px; }
+
+.site {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+  padding: 0 24px 56px;
+}
+
+.topbar, .section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.topbar { padding: 18px 0; }
+.topbar a { text-decoration: none; }
+.topbar a:hover { text-decoration: underline; }
+.topbar div, .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.topbar div { gap: 20px; }
+.brand { font-weight: 750; font-size: 1.25rem; }
+
+.hero {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  min-height: clamp(310px, 42vw, 460px);
+  padding: clamp(24px, 6vw, 72px);
+  border-radius: 24px;
+  color: #fffcf1;
+  background:
+    linear-gradient(90deg, rgba(14, 30, 25, 0.89), rgba(14, 30, 25, 0.47)),
+    url("https://images.pexels.com/photos/32398720/pexels-photo-32398720.jpeg?auto=compress&cs=tinysrgb&w=1600")
+      center 43% / cover no-repeat,
+    #214638;
+}
+
+.hero h1 {
+  max-width: 620px;
+  font: 500 clamp(2.5rem, 8vw, 5.3rem)/1 "Instrument Serif", Georgia, serif;
+}
+
+.hero p {
+  max-width: 480px;
+  margin: 14px 0 20px;
+  color: #e1ecdf;
+}
+
+.button, .secondary {
+  display: inline-block;
+  padding: 9px 14px;
+  border: 1px solid #254c3c;
+  border-radius: 8px;
+  background: #254c3c;
+  color: #fff;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.button:hover { background: #1a392d; }
+.hero .button { background: #e6ebd5; color: #214638; border-color: #e6ebd5; }
+.hero .button:hover { background: #fffdf2; }
+
+.secondary {
+  background: #fff;
+  color: #304a3b;
+  border-color: #c5d1c7;
+}
+
+.secondary:hover { background: #ecf1eb; }
+
+.explore {
+  margin: 24px 0;
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px solid #d8e1d6;
+  border-radius: 16px;
+  background: rgba(255, 253, 246, 0.92);
+}
+
+.section-heading { margin-bottom: 14px; }
+
+.destination-filters {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 10px;
+  width: min(100%, 410px);
+}
+
+.destination-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 14px;
+  margin-top: 14px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.destination {
+  min-width: 0;
+  padding: 4px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.destination strong, .destination > span:last-child { display: block; }
+.destination > span:last-child { color: #516359; font-size: 0.85rem; }
+
+.photo {
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  font-weight: 750;
+  width: min(100%, 128px);
+  aspect-ratio: 1;
+  margin: 0 auto 8px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #dbe6d9;
+  box-shadow: 0 0 0 1px #cbd5c9;
+}
+
+.photo > span, .photo > img { grid-area: 1 / 1; }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.destination:hover .photo { box-shadow: 0 0 0 2px #3d7059; }
+
+.planner-grid, .field-grid, .activity-fields { display: grid; gap: 14px; }
+.planner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.field-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.panel {
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px solid #d8e1d6;
+  border-radius: 16px;
+  background: #fff;
+  min-width: 0;
+}
+
+.panel h2 { margin-bottom: 10px; }
+.panel h3 { overflow-wrap: anywhere; }
+
+label {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.section-heading label { margin: 0; }
+
+input, select {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid #a9b9ad;
+  border-radius: 7px;
+  background: #fff;
+  color: inherit;
+}
+
+.budget { margin: 14px 0; }
+
+.budget div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  padding: 9px 0;
+  border-top: 1px solid #e4ebe1;
+}
+
+.budget dd { margin: 0; font-weight: 750; }
+.warning { color: #a0271f; font-weight: 650; }
+.itinerary { margin-top: 18px; }
+
+.activity-editor {
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: #f1f5ef;
+}
+
+.activity-fields {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 10px 0;
+}
+
+.activity-fields label { margin: 0; }
+.activity-editor .warning { margin-bottom: 8px; }
+.timeline { list-style: none; margin: 0; padding: 0; }
+
+.timeline li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 12px 0;
+  border-top: 1px solid #e4ebe1;
+}
+
+.timeline li > div:first-child { min-width: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 960px) {
+  .destination-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  .site { padding-inline: 14px; }
+  .hero { background-position: center, 58% center; }
+  .destination-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .planner-grid { grid-template-columns: 1fr; }
+  .activity-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 400px) {
+  .destination-grid { gap: 8px; }
+  .destination-filters { grid-template-columns: 1fr; }
+  .destination { font-size: 0.87rem; }
+  .destination > span:last-child { font-size: 0.72rem; }
+  .field-grid, .activity-fields { grid-template-columns: 1fr; }
+}

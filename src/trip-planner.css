@@ -1,0 +1,132 @@
+.panel.trip-summary {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  border-color: #173b30;
+  background: #173b30;
+  color: #fffdf4;
+}
+
+.trip-summary h2 {
+  margin: 0;
+  color: #dce9d9;
+  font-size: 1rem;
+}
+
+.trip-summary h3 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.trip-summary p {
+  color: #dce9d9;
+}
+
+.trip-summary .secondary {
+  justify-self: start;
+}
+
+.budget-amount {
+  display: grid;
+  gap: 3px;
+  margin-top: 8px;
+}
+
+.budget-amount strong {
+  color: #f3eab9;
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.budget-amount .over-budget {
+  color: #ffc4b2;
+}
+
+.trip-summary progress {
+  width: 100%;
+  height: 10px;
+  accent-color: #d8d899;
+}
+
+.budget-breakdown {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 4px 0 8px;
+}
+
+.budget-breakdown div {
+  padding: 10px;
+  border: 1px solid #4b6b5b;
+  border-radius: 8px;
+}
+
+.budget-breakdown dt {
+  font-size: 0.875rem;
+}
+
+.budget-breakdown dd {
+  margin: 2px 0 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.currency-conversion {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #eef4eb;
+}
+
+.currency-conversion label {
+  margin-bottom: 4px;
+}
+
+.trip-settings .warning {
+  margin-bottom: 8px;
+}
+
+.trip-day-controls {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trip-day-controls label {
+  margin: 0;
+}
+
+.trip-day-controls button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.trip-timeline .timeline li {
+  margin-bottom: 8px;
+  padding: 12px;
+  border: 1px solid #d8e1d6;
+  border-inline-start: 4px solid #477764;
+  border-radius: 8px;
+}
+
+.trip-timeline time {
+  color: #285d4b;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 480px) {
+  .trip-day-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .trip-day-controls label {
+    order: -1;
+    grid-column: 1 / -1;
+  }
+}
