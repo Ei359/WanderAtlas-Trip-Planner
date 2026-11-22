@@ -17,25 +17,25 @@ Start by exploring destinations or open a sample trip to see what a finished pla
 
 Browse 20 destinations, search by city or country, or filter by region. Selecting a destination opens it in the planner.
 
-![Destination cards with city search and region filters](screenshots/02-destinations.png)
+![Destination cards with city search and region filters](screenshots/02-destinations.png) 
 
 ### 3. Build a Package and Estimate Costs
 
 Enter your arrival date, length of stay, and number of travelers. Compare the Essential, Explorer, and Comfort packages, then adjust your choices to see an updated cost breakdown. The estimate includes selected meals, local transport, attractions, accommodation, and a budget buffer.
 
-![Singapore package builder showing three options and an estimated total of SGD 540.10](screenshots/03-package-estimate.png)
+![Singapore package builder showing three options and an estimated total of SGD 540.10](screenshots/05-package-estimate.png)
 
 ### 4. Save and Reopen Plans in My Trips
 
 Keep multiple plans in one place. The list shows each trip's dates and estimated total so you can find the plan you want to reopen.
 
-![My Trips list showing saved plans for Singapore and Chiang Mai](screenshots/04-my-trips.png)
+![My Trips list showing saved plans for Singapore and Chiang Mai](screenshots/03-my-trips.png)
 
 ### 5. Add Trip Notes and Set a Budget Limit
 
 Give your trip a name, add notes such as your hotel check-in time, and compare the planned total with a budget limit. In this Singapore example, the estimated cost is SGD 540.10, leaving SGD 9.90 from a budget of SGD 550.
 
-![Singapore trip details showing a hotel check-in note and the remaining budget](screenshots/05-trip-details.png)
+![Singapore trip details showing a hotel check-in note and the remaining budget](screenshots/04-trip-details.png)
 
 ### 6. View the Daily Itinerary
 
