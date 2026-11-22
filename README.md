@@ -4,7 +4,8 @@ WanderAtlas is a travel planning application I built with React. It lets you exp
 
 I built it around the steps I would take when planning a trip. I can choose where to go, work out how much to budget, and save a plan that I can come back to later.
 
-<!-- Add your WanderAtlas Vercel demo link here. -->
+[Try the live WanderAtlas Trip Planner demo](https://wanderatlas-trip-planner.vercel.app/)
+
 ## Trip Planner Preview
 
 ### 1. WanderAtlas Home
