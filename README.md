@@ -147,3 +147,9 @@ Package prices are estimates for planning and exclude flights. Actual costs can 
 ## About This Project
 
 I built WanderAtlas to practice turning a multi-step workflow into a React application. The most interesting part was connecting the package choices to the budget and itinerary so that a change in one place updates the rest of the plan.
+
+## Developer
+
+**Ei Thazin Khine**
+
+GitHub: [Ei359](https://github.com/Ei359)
